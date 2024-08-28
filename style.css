@@ -1,3 +1,13 @@
+body{
+    max-width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    list-style: none;
+    margin: 2% 12%;
+}
+
 *{
     box-sizing: border-box;
    background-color: beige; 
@@ -13,8 +23,14 @@
 
 img{
     width: 100%;
-    display: block;
-    height: auto;
+    /* display: block;
+    height: auto; */
+}
+
+.imgstr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 1em;
 }
 
 .headerlink{
@@ -23,8 +39,6 @@ img{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.headernav{
-}
 
 a{
     color: inherit;
@@ -33,14 +47,23 @@ a{
     text-underline-offset: 2px;
     text-decoration-thickness: 2px;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
+
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.headernav{
 }
 
 .udsalgstreg{
@@ -60,16 +83,32 @@ text-decoration: line-through 10%;
     padding:2%;
     background-color: lightgrey;
     opacity: 80%;
+    
 }
 
 .onsale{
     position: relative;
     text-align: center;
+
 }
 
 .soldout{
     position: relative;
-    text-align: center;
     opacity: 50%;
-    
+    text-align: center;
+
+}
+
+.product{
+    text-align: center;
+}
+
+.produktinfo{
+    max-width: 300px;
+    font-size: small;
+}
+
+dt{
+    font-weight: 900;
+    text-decoration: underline;
 }
