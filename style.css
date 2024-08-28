@@ -2,3 +2,11 @@
     box-sizing: border-box;
    background-color: beige; 
 }
+
+.categorilinkpynt a{
+    text-decoration: none;
+    background-color: blue;
+    color: aqua;
+    text-align: center;
+    
+}
