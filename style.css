@@ -1,12 +1,38 @@
 *{
     box-sizing: border-box;
    background-color: beige; 
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .categorilinkpynt a{
     text-decoration: none;
     background-color: blue;
     color: aqua;
-    text-align: center;
+    text-align: center; 
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.headerlink{
+    text-decoration: none;
+    display: inline;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
     
+}
+
+.mainnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
