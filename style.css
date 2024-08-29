@@ -1,11 +1,11 @@
 body{
-    max-width: 600px;
+    max-width: 900px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main{
     list-style: none;
-    margin: 2% 12%;
+    /* margin: 2% 12%; */
 }
 
 *{
