@@ -9,29 +9,36 @@
 
 </head>
 
-<header class="header"> 
-    <a class="headerlink" href="index.html">SportW</a>
-
-    <nav class="headernav">
-        <a href="kategori.html">Categories</a>
-        <a href="produktliste.html">Products</a>
-        <a href="d">Hej </a>
-    </nav>
-</header>
 <body>
-    <h1> </h1>
+    <header class="header"> 
+        <a class="headerlink" href="index.html">SportW</a>
+    
+        <nav class="headernav">
+            <a href="kategori.html">Categories</a>
+            <a href="produktliste.html">Products</a>
+            <a href="d">Hej </a>
+        </nav>
+    </header>
 
-<div class="grid_4">
-    <div class="product">
-        <img src="img/fodbold.webp" alt="Fodbold">
+    <main>
+    <h1>Apparel </h1>
 
-        <h3>Fodbold</h3>
+    <template id="productTemplate">
+        <article class="product">
+    <div class="grid_4">
+        <div class="product">
+            <img src="img/fodbold.webp" alt="Fodbold">
 
-        <p>DKK 550,-</p>
-        
-        <a href="produkt.html">Mere Information</a>
-    </div>
+            <h3>Fodbold</h3>
 
+            <p>DKK 550,-</p>
+            
+            <a href="produkt.html">Mere Information</a>
+        </div>
+</article>
+
+</template>
+<!-- 
     <div class="soldout">
         
         <img src="img/kvindedragt.webp" alt="Dragt">
@@ -126,6 +133,7 @@
         
         <a href="produkt.html">Mere Information</a>
     </div>
+    
     <div class="product">
         <img src="img/fodbold.webp" alt="Fodbold">
 
@@ -157,10 +165,10 @@
     </div>
 
 
-</div>
+</div> -->
 
+</main>
 
-
-
+<script src="productlist.js"></script>
 </body>
 </html>
