@@ -1,6 +1,9 @@
-window.addEventListener("DOMContentLoaded", init);
+// window.addEventListener("DOMContentLoaded", init);
 
-const productsURI = "https://kea-alt-del.dk/t7/api/products";
+// const productsURI = "https://kea-alt-del.dk/t7/api/products";
+// .then(res) => res.json())
+// .then(showProducts);
+
 
 let productList;
 let productTemplate;
