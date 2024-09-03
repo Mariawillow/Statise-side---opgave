@@ -31,6 +31,17 @@ function showProduct(product) {
   clone.querySelector("h3").textContent = product.productdisplayname;
   clone.querySelector("p").textContent = product.price;
   clone.querySelector("img").src =`https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  clone.querySelector("img").alt = 
+//   clone.querySelector("img").alt = ;
+
+  if (product.soldout){
+    clone.querySelector("article").classList.add("soldOut");
+  };
+
+  if(product.discounted) {
+    clone.querySelector("article").classList.add("onSale");
+    clone.querySelector(".discoundt p span").textContent = Math.round(product.price - (product.price * product.discount)/100);
+    clone.querySelector(".discoundt p+p span").textContent = product.discount;
+  }
+
   productList.appendChild(clone);
 }

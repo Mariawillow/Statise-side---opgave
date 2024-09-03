@@ -63,14 +63,12 @@ a:hover{
     margin-top: 5%;
 }
 
-.headernav{
-}
 
 .udsalgstreg{
 text-decoration: line-through 10%;
 }
 
-.udsalgrød{
+.discounted{
     color: red;
 
 }
@@ -83,16 +81,16 @@ text-decoration: line-through 10%;
     padding:2%;
     background-color: lightgrey;
     opacity: 80%;
-    
+  
 }
 
-.onsale{
+.onSale{
     position: relative;
     text-align: center;
 
 }
 
-.soldout{
+.soldOut{
     position: relative;
     opacity: 50%;
     text-align: center;

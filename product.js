@@ -1,4 +1,7 @@
-// window.addEventListener("DOMContentLoaded", init);
+window.addEventListener("DOMContentLoaded", init);
+
+// const document = productTemplate.cloneNode(true);
+
 
 // const id = 1532;
 // const uri = `https://kea-alt-del.dk/t7/api/products/${id}`;
@@ -23,7 +26,7 @@
 
 // window.addEventListener("DOMContentLoaded", init);
 
-fetch("https://kea-alt-del.dk/t7/api/products/1530")
+fetch("https://kea-alt-del.dk/t7/images/webp/640/${id}.webp")
 .then(response =>response.json())
 .then(data => showProduct(data));
 
@@ -32,8 +35,6 @@ function showProduct(product){
  document.querySelector(".purchaseBox h3").textContent = product.productdisplayname;
  document.querySelector(".purchaseBox .brand").textContent = product.brandname;
  document.querySelector(".purchaseBox .price").textContent = product.price;
-
-
  document.querySelector("img").src= `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
