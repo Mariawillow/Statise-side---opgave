@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", init);
+// window.addEventListener("DOMContentLoaded", init);
 
 // const document = productTemplate.cloneNode(true);
 
@@ -24,11 +24,13 @@ window.addEventListener("DOMContentLoaded", init);
 // }
 
 
-// window.addEventListener("DOMContentLoaded", init);
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
 
-fetch("https://kea-alt-del.dk/t7/images/webp/640/${id}.webp")
+fetch("https://kea-alt-del.dk/t7/images/webp/640/${id}")
 .then(response =>response.json())
 .then(data => showProduct(data));
+
 
 function showProduct(product){
  console.log(product);
